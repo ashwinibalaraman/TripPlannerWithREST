@@ -1,5 +1,9 @@
 # cmpe273-assignment3
 
+The trip planner is a feature that will take a set of locations from the database and will then check against UBER’s price estimates API to suggest the best possible route in terms of costs and duration.
+
+To access Uber Sandbox API, OAuth token is generated and captured by redirecting user to http://localhost:7635. For authenticating user the first time, user is redirected to Uber site in the browser. This OAuth access token is for single use and expires in 10 minutes.
+
 /****** POST ******/
 curl -H "Content-Type: application/json" -X POST -d '{
     "starting_from_location_id": "565179fd91643f77ed15ed17",

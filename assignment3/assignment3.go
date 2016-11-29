@@ -87,7 +87,7 @@ var PutCounter int
 
 func main() {
 	//Url = "localhost"
-	Url = "mongodb://ashwini:Bangalore1@ds045064.mongolab.com:45064/cmpe273"
+	Url = "mongodb://ashwini:<passwd>@ds045064.mongolab.com:45064/cmpe273"
 	mux := httprouter.New()
 
 	mux.GET("/trips/:trip_id", getTrips)
